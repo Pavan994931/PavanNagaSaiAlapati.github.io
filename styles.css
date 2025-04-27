@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #50025c;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+header .contact-links a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    color: #50025c;
+    border-bottom: 2px solid #50025c;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Education Section */
+#education table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#education th,
+#education td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#education th {
+    background-color: #50025c;
+    color: white;
+}
+
+/* Skills Section */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+#skills .skills-grid div {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#skills .skills-grid h3 {
+    color: #50025c;
+    margin-bottom: 0.5rem;
+}
+
+/* Work Experience Section */
+#work-experience .experience-item {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#work-experience .experience-item h3 {
+    color: #50025c;
+    margin-bottom: 0.5rem;
+}
+
+#work-experience .duration {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+#work-experience .experience-item ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+/* Projects Section */
+#projects .project-item {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project-item h3 {
+    color: #50025c;
+    margin-bottom: 0.5rem;
+}
+
+#projects .duration {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+#projects .project-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #50025c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#projects .project-item a:hover {
+    background-color: #3a0144;
+}
+
+/* Achievements Section */
+#achievements ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #50025c;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #education table {
+        width: 100%;
+    }
+
+    #skills .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
